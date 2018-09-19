@@ -1,0 +1,159 @@
+@import '../../theme/settings';
+
+.app-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: $header-height;
+	background: $color-white;
+	padding: 0;
+	justify-content: initial;
+	z-index: 9;
+	@include box-shadow;
+}
+
+.app-brand {
+	height: $header-height;
+	border-right: 1px solid #ddd;
+
+	@include media-breakpoint-up(md) {
+		width: $sidebar-width;
+	}
+}
+
+.navbar-brand {
+	line-height: $header-height;
+	padding: 0 1rem;
+	margin: 0;
+	color: $color-text;
+}
+
+.app-header-controls {
+	flex: 1;
+	display: flex;	
+	padding: 0 15px;
+}
+
+.header-icon {
+	font-size: 2rem;
+	color: $color-text;
+}
+
+.header-button {
+	position: relative;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	height: $header-height;
+	color: $color-text;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.nav-toggle .header-button {
+	border: 0;
+	background: $color-white;
+	cursor: pointer;
+	outline: none;
+}
+
+.header-button-notification {
+	position: absolute;
+	top: 1rem;
+	right: .25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.25rem;
+	height: 1.25rem;
+	border-radius: 50%;
+	background: $color-alert;
+	color: $color-white;
+	font-size: .7rem;	
+	border: 1px solid $color-white;
+}
+
+.dropdown-menu {
+	border-radius: 0;
+	padding: 0;
+	margin: 0;
+	border-color: $color-grey-light;
+	@include box-shadow;
+}
+
+.dropdown-menu.animated {
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+
+.nav-toggle {
+	margin-right: auto;
+}
+
+.nav-toggle .header-button {
+	margin: 0;
+}
+
+.app-header-account img {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;	
+}
+
+.notification-dropdown {
+	width: 20rem;
+}
+
+.notification-dropdown-header,
+.notification-dropdown-footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3rem;
+	border-bottom: 1px solid $color-grey-light;
+	margin: 0;
+}
+
+.notification-dropdown-footer {
+	border-bottom: 0;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.notification-dropdown-list {
+	@include list-reset;
+}
+
+.notification-dropdown-list li {
+	border-bottom: 1px solid $color-grey-light;
+}
+
+.notification-dropdown-list a {
+	display: block;
+	padding: .5rem;
+	line-height: 1;
+	color: $color-grey;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.notification-dropdown-title {
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notification-dropdown-time {
+	font-size: .6rem;
+	color: #ccc;
+}

@@ -1,0 +1,48 @@
+@import '../../theme/settings';
+
+.menu-title {
+	padding: 1.5rem 1rem .8rem;
+	font-size: .75rem;
+	text-transform: uppercase;
+	color: $color-white;	
+}
+
+.menu-item a {
+	display: flex;
+	align-items: center;
+	color: $color-white;
+	padding: .8rem 1rem;
+	transition: background .2s;
+
+	&:hover {
+		text-decoration: none;
+		background: $color-primary-accent;
+	}
+}
+
+.menu-item .nav-icon {
+	font-size: 1.5rem;
+	width: 2rem;
+}
+
+.menu-submenu .menu-item .nav-icon {
+	font-size: 1rem;
+	width: 1.5rem;
+}
+
+.menu-item .dropdown-icon {
+	margin-left: auto;
+	transition: transform .3s;
+}
+
+.dropdown-trigger.collapsed .dropdown-icon {
+	transform: rotate(-90deg);
+}
+
+.menu-submenu {
+	background: darken($color-primary-accent, 5%);
+}
+
+.menu-submenu .menu-item a {
+	padding-left: 3rem;
+}

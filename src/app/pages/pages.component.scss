@@ -1,0 +1,20 @@
+@import '../shared/theme/settings';
+
+.body-wrapper {		
+	position: fixed;
+	z-index: 8;
+	top: 0;	
+	bottom: 0;	
+	right: 0;
+	top: 5rem;
+	left: 20rem;
+	padding: 30px 15px 0;
+	background: $color-grey-light;
+	overflow-y: scroll;
+	transition: left .3s ease-in-out;
+}
+
+.body-wrapper.collapsed {
+	left: 0;
+	//left: $sidebar-width-collapsed;
+}

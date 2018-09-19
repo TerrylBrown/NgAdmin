@@ -1,0 +1,15 @@
+@import '../../theme/settings';
+
+.card {
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 1rem;
+	@include box-shadow;
+}
+
+.card-header {
+	border-radius: 0;
+	background: $color-primary;
+	color: $color-white;
+	border: 0;
+}

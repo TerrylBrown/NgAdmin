@@ -1,0 +1,74 @@
+<nav class="menu">
+	<ul class="menu-list list-unstyled">
+		<li class="menu-title">Navigation</li>
+		<li class="menu-item">
+			<a [routerLink]="['/pages/dashboard']">
+				<span class="nav-icon ion ion-md-speedometer"></span> Dashboard
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="#mail-submenu"					
+					class="dropdown-trigger collapsed"
+					data-toggle="collapse">
+				<span class="nav-icon ion ion-md-mail-open"></span> Mail 
+				<span class="dropdown-icon ion ion-md-arrow-dropdown"></span>
+			</a>
+			<ul class="menu-submenu list-unstyled collapse" 
+					id="mail-submenu">
+				<li class="menu-item">
+					<a [routerLink]="['/pages/mail/inbox']">
+						<span class="nav-icon ion ion-md-mail"></span> Inbox
+					</a>
+				</li>
+				<li class="menu-item">
+					<a [routerLink]="['/pages/mail/saved']">
+						<span class="nav-icon ion ion-md-save"></span> Saved
+					</a>
+				</li>
+				<li class="menu-item">
+					<a [routerLink]="['/pages/mail/trash']">
+						<span class="nav-icon ion ion-md-trash"></span> Trash
+					</a>
+				</li>
+			</ul>
+		</li>
+		<li class="menu-item">
+			<a href="#components-submenu"					
+					class="dropdown-trigger collapsed"
+					data-toggle="collapse">
+				<span class="nav-icon ion ion-md-color-palette"></span> UI Elements 
+				<span class="dropdown-icon ion ion-md-arrow-dropdown"></span>
+			</a>
+			<ul class="menu-submenu list-unstyled collapse" 
+					id="components-submenu">
+				<li class="menu-item">
+					<a href="#">Modal</a>
+				</li>
+				<li class="menu-item">
+					<a href="#">Buttons</a>
+				</li>
+				<li class="menu-item">
+					<a href="#">Maps</a>
+				</li>
+				<li class="menu-item">
+					<a href="#">Card</a>
+				</li>
+			</ul>
+		</li>
+		<li class="menu-item">
+			<a href="#">
+				<span class="nav-icon ion ion-md-checkbox-outline"></span> Forms				
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="#">
+				<span class="nav-icon ion ion-md-analytics"></span> Charts				
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="#">
+				<span class="nav-icon ion ion-md-map"></span> Maps				
+			</a>
+		</li>
+	</ul>
+</nav>

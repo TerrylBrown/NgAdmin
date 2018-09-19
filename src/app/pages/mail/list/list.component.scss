@@ -1,0 +1,47 @@
+@import '../../../shared/theme/settings';
+
+.list-item {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid $color-grey-light;
+	padding: 1rem;
+	cursor: default;
+	transition: background .3s;
+
+	&:hover {
+		background: $color-grey-light;
+	}
+}
+
+.mail-icon {	
+	margin-right: 2rem;
+	font-size: 1.5rem;
+}
+
+.list-timestamp {
+	font-size: .75rem;
+	margin-right: 2rem;
+}
+
+.list-title {
+	font-weight: bold;
+	width: 10rem;
+	@include ellipsis();
+}
+
+.list-subject {
+	flex: 1;
+	@include ellipsis();
+}
+
+.list-starred {
+	margin-left: 2rem;
+}
+
+.list-starred .mail-icon {
+	color: #ccc;
+}
+
+.list-starred .mail-icon.starred {
+	color: $color-primary;
+}

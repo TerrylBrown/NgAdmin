@@ -1,0 +1,11 @@
+@import '../../theme/settings';
+
+.sidebar {
+	position: fixed;
+	left: 0;
+	top: 5rem;
+	bottom: 0;
+	background: $sidebar-bg;
+	width: $sidebar-width;
+	z-index: 8;
+}

@@ -1,0 +1,38 @@
+[
+	{
+		"from": {
+			"name": "John Doe",
+			"email": "johndoe@email.com"
+		},
+		"subject": "Lorem ipsum dolor sit amet",
+		"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus turpis, ullamcorper et scelerisque ac, egestas ut sem. Phasellus mattis turpis vel tellus ornare, eu dapibus ipsum rutrum. Nulla commodo est quis tincidunt mollis. Nunc sed rutrum leo, non viverra odio. Suspendisse eget massa laoreet, commodo quam nec, dapibus magna. Donec id massa condimentum, hendrerit ligula nec, blandit diam. Aenean dui ipsum, imperdiet et gravida nec, consequat sit amet mi. Donec at ultricies metus. Donec a nisi magna. Aenean vitae fermentum mauris. Nunc pretium enim eu placerat tincidunt.",
+		"time": "11:42am",
+		"date": "02/12/2020",
+		"read": false,
+		"starred": false
+	},
+	{
+		"from": {
+			"name": "John Doe",
+			"email": "johndoe@email.com"
+		},
+		"subject": "Lorem ipsum dolor sit amet",
+		"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus turpis, ullamcorper et scelerisque ac, egestas ut sem. Phasellus mattis turpis vel tellus ornare, eu dapibus ipsum rutrum. Nulla commodo est quis tincidunt mollis. Nunc sed rutrum leo, non viverra odio. Suspendisse eget massa laoreet, commodo quam nec, dapibus magna. Donec id massa condimentum, hendrerit ligula nec, blandit diam. Aenean dui ipsum, imperdiet et gravida nec, consequat sit amet mi. Donec at ultricies metus. Donec a nisi magna. Aenean vitae fermentum mauris. Nunc pretium enim eu placerat tincidunt.",
+		"time": "11:42am",
+		"date": "02/12/2020",
+		"read": true,
+		"starred": true
+	},
+	{
+		"from": {
+			"name": "John Doe",
+			"email": "johndoe@email.com"
+		},
+		"subject": "Lorem ipsum dolor sit amet",
+		"body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam metus turpis, ullamcorper et scelerisque ac, egestas ut sem. Phasellus mattis turpis vel tellus ornare, eu dapibus ipsum rutrum. Nulla commodo est quis tincidunt mollis. Nunc sed rutrum leo, non viverra odio. Suspendisse eget massa laoreet, commodo quam nec, dapibus magna. Donec id massa condimentum, hendrerit ligula nec, blandit diam. Aenean dui ipsum, imperdiet et gravida nec, consequat sit amet mi. Donec at ultricies metus. Donec a nisi magna. Aenean vitae fermentum mauris. Nunc pretium enim eu placerat tincidunt.",
+		"time": "11:42am",
+		"date": "02/12/2020",
+		"read": false,
+		"starred": true
+	}
+]

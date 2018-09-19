@@ -1,0 +1,28 @@
+<div class="list-item" *ngFor="let mail of mailData">	
+	<div class="list-icon">
+		<div class="unread" *ngIf="!mail.read">
+			<span class="mail-icon ion ion-md-mail"></span>
+		</div>
+		<div class="read" *ngIf="mail.read">
+			<span class="mail-icon ion ion-md-mail-open"></span>			
+		</div>
+	</div>
+	<div class="list-timestamp">
+		<div class="list-time">
+			{{mail.time}}
+		</div>
+		<div class="list-date">
+			{{mail.date}}
+		</div>
+	</div>
+	<div class="list-title">
+		{{mail.from.name}}
+	</div>
+	<div class="list-subject">
+		<strong>Subject:</strong> {{mail.subject}}
+	</div>
+	<div class="list-starred">
+		<span class="mail-icon ion ion-md-star" 
+					[ngClass]="{'starred': mail.starred}"></span>
+	</div>
+</div>

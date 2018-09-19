@@ -1,0 +1,141 @@
+<header class="app-header navbar">
+	<div class="app-brand">
+		<a [routerLink]="['/pages/dashboard']" class="navbar-brand">
+			<strong>Ng</strong>Admin
+		</a>
+	</div>
+	<div class="app-header-controls">
+		<div class="nav-toggle">
+			<button (click)="toggleSidebar()" class="header-button">
+				<span class="header-icon ion ion-md-menu"></span>
+			</button>
+		</div>
+		<div class="app-header-notifications dropdown">
+			<a href="#" 
+				id="headerNotificationDropdown"
+				class="header-button"
+				data-toggle="dropdown">
+				<span class="header-button-notification">88</span>
+				<span class="header-icon ion ion-md-notifications"></span>
+			</a>
+			<div class="dropdown-menu dropdown-menu-right animated fadeIn" 
+					aria-labelledby="headerNotificationDropdown">
+		    <div class="notification-dropdown">
+					<p class="notification-dropdown-header">
+						You have 2 new notifications
+					</p>
+					<ul class="notification-dropdown-list">
+						<li>
+							<a href="#">
+								<span class="notification-dropdown-title">
+									Some new notification
+								</span>
+								<span class="notification-dropdown-time">
+									Tuesday 08/08/2018 - 12:43am
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="notification-dropdown-title">
+									Some new notification
+								</span>
+								<span class="notification-dropdown-time">
+									Tuesday 08/08/2018 - 12:43am
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="notification-dropdown-title">
+									Some new notification
+								</span>
+								<span class="notification-dropdown-time">
+									Tuesday 08/08/2018 - 12:43am
+								</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="notification-dropdown-footer">
+						See all notifications
+					</a>
+		    </div>
+		  </div>
+		</div>
+		<div class="app-header-mail dropdown">
+			<a href="#"
+				id="headerMailDropdown"
+				class="header-button"
+				data-toggle="dropdown">
+				<span class="header-button-notification">88</span>
+				<span class="header-icon ion ion-md-mail"></span>
+			</a>
+			<div class="dropdown-menu dropdown-menu-right animated fadeIn" 
+					aria-labelledby="headerMailDropdown">
+		    <div class="notification-dropdown">
+					<p class="notification-dropdown-header">
+						You have 3 new messages
+					</p>
+					<ul class="notification-dropdown-list">
+						<li>
+							<a href="#">
+								<span class="notification-dropdown-title">
+									Some Mail Yo!
+								</span>
+								<span class="notification-dropdown-time">
+									Tuesday 08/08/2018 - 12:43am
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="notification-dropdown-title">
+									Some Mail Yo!
+								</span>
+								<span class="notification-dropdown-time">
+									Tuesday 08/08/2018 - 12:43am
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="notification-dropdown-title">
+									Some Mail Yo!
+								</span>
+								<span class="notification-dropdown-time">
+									Tuesday 08/08/2018 - 12:43am
+								</span>
+							</a>
+						</li>
+					</ul>
+					<a href="#" class="notification-dropdown-footer">
+						See all mail
+					</a>
+		    </div>
+		  </div>
+		</div>
+		<div class="app-header-account dropdown">
+			<a href="#"
+				id="headerAccountDropdown"
+				class="header-button"
+				data-toggle="dropdown">
+				<img src="../../../assets/images/account.jpg">
+			</a>
+			<div class="dropdown-menu dropdown-menu-right" 
+					aria-labelledby="headerAccountDropdown">
+		    <div class="settings-dropdown">
+						<div class="settings-dropdown-profile">
+								
+						</div>
+						<div class="settings-dropdown-menu">
+								<ul>
+										<li><a href="#">Profile</a></li>
+										<li><a href="#">Settings</a></li>
+										<li><a href="#">Sign Out</a></li>
+								</ul>
+						</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+</header>
